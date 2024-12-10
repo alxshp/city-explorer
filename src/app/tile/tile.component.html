@@ -1,0 +1,12 @@
+<div class="city-tiles">
+  <div *ngFor="let city of cities" class="tile">
+    <img [src]="city.image" class="tile-img" alt="{{ city.name }}">
+    <div class="tile-details">
+      <div class="tile-name">
+    <h2>{{ city.name }}</h2>
+    <img src="assets/{{ cityService.isFavorite(city.id) ? 'star-filled.svg' : 'star-outline.svg' }}" alt="Favorite" class="star-icon" (click)="toggleFavorite(city.id)">
+  </div>
+    <p>{{ city.description }}</p>
+  </div>
+  </div>
+</div>

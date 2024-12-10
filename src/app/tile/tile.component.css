@@ -1,0 +1,55 @@
+.city-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.tile {
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  margin-top: 16px;
+  margin-right: 16px;
+  width: 300px;
+  border-radius: 8px;
+  background: rgb(242, 245, 250);
+}
+
+.tile h2 {
+  color: rgb(67, 70, 82);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.tile p {
+  color: rgb(117, 121, 134);
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.tile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+.tile-details {
+  margin-top: 12px;
+  padding: 0 20px;
+  margin-bottom: 32px;
+}
+
+.tile:hover {
+  box-shadow: 0px 0px 10px 0px rgb(202, 203, 204);
+}
+
+.tile-name {
+  display: flex;
+  align-items: center;
+}

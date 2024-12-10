@@ -1,0 +1,24 @@
+<div class="container-create">
+  <button class="back" (click)="onCancel()"><img src="assets/undo.svg" alt="">Назад</button>
+  <div>
+    <form class="form">
+      <div class="form-group">
+        <label for="cityName">Название города</label>
+        <input type="text" id="cityName" name="cityName" [(ngModel)]="cityName" placeholder="" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Описание города</label>
+        <textarea id="description" name="description" [(ngModel)]="description" placeholder="" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="imageUrl">Ссылка на картинку</label>
+        <input type="text" id="imageUrl" name="imageUrl" [(ngModel)]="imageUrl" placeholder="" required>
+      </div>
+
+
+      <button class="create-button" (click)="onCreate()">Создать</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="city-list">
+  <ul>
+    <li *ngFor="let city of cities">
+      <img class="city-image" [src]="city.image" alt="{{ city.name }}">
+      <div class="list-details">
+        <div class="list-name">
+        <h2>{{ city.name }}</h2>
+        <img src="assets/{{ cityService.isFavorite(city.id) ? 'star-filled.svg' : 'star-outline.svg' }}" alt="Favorite" class="star-icon" (click)="toggleFavorite(city.id)">
+      </div>
+        <p>{{ city.description }}</p>
+      </div>
+      <img src="assets/trash.svg" alt="trash" class="trash" (click)="deleteCity(city.id)">
+    </li>
+  </ul>
+</div>

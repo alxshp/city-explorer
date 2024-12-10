@@ -1,0 +1,45 @@
+.container-create {
+  margin-left: 60px;
+  max-width: 534px;
+}
+
+
+.back {
+  border-radius: 2px;
+  border: 1px solid rgba(196, 199, 209, 1);
+  background-color: #fff;
+  display: flex;
+  gap: 12px;
+  line-height: 36px;
+  padding: 0 12px;
+  font-size: 16px;
+  color: rgb(67, 70, 82);
+  font-family: Roboto;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: rgb(67, 70, 82);
+}
+
+.form-group input[type="text"],
+.form-group input[type="url"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: none;
+}
